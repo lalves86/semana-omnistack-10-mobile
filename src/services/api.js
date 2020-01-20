@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://192.168.56.1:3333'
+  baseURL: 'https://semana-omnistack-10.herokuapp.com'
 });
 
 export default api;

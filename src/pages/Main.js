@@ -61,7 +61,8 @@ function Main({ navigation }) {
       }
     });
 
-    setDevs(response.data.devs);
+    console.log(response.data);
+    setDevs(response.data);
     setupWebSocket();
   }
 
@@ -82,7 +83,7 @@ function Main({ navigation }) {
       >
         {devs.map(dev => (
           <Marker 
-            key={dev.id}
+            key={dev._id}
             coordinate={{ 
               latitude: dev.location.coordinates[1],
               longitude: dev.location.coordinates[0]

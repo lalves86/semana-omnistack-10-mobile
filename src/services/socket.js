@@ -1,6 +1,6 @@
 import socketio from 'socket.io-client';
 
-const socket = socketio('http://192.168.56.1:3333', {
+const socket = socketio('https://semana-omnistack-10.herokuapp.com', {
   autoConnect: false,
 });
 
@@ -27,4 +27,5 @@ function disconnect() {
 export {
   connect,
   disconnect,
+  subscribeToNewDevs
 }
