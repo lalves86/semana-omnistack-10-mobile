@@ -60,8 +60,7 @@ function Main({ navigation }) {
         techs
       }
     });
-
-    console.log(response.data);
+    
     setDevs(response.data);
     setupWebSocket();
   }
